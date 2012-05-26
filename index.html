@@ -8,8 +8,18 @@
 
   <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
   <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <link rel="stylesheet" href="stylesheets/jqClock.css"/>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="javascripts/script.js"></script>
+  <script type="text/javascript" src="https://raw.github.com/4031651/jqClock/master/js/jqClock.js"></script>
+  <script type="text/javascript">
+jQuery(function () {
+    jQuery('#clock').clock({
+        graduations: 12
+    });
+    jQuery('#clock .jqc-clock-face').css('background-color', '#66f');
+});
+  </script>
 
   <title>jqClock</title>
   <meta name="description" content="">
@@ -25,7 +35,7 @@
       <h1 class="title">jqClock</h1>
     </header>
     <div id="container">
-      <p class="tagline"></p>
+      <p class="tagline"><!-- --></p>
       <div id="main" role="main">
         <div class="download-bar">
         <div class="inner">
@@ -33,41 +43,39 @@
           <a href="https://github.com/4031651/jqClock/zipball/master" class="download-button zip"><span>Download</span></a>
           <a href="https://github.com/4031651/jqClock" class="code">View jqClock on GitHub</a>
         </div>
-        <span class="blc"></span><span class="trc"></span>
+        <span class="blc"><!-- --></span><span class="trc"><!-- --></span>
         </div>
         <article class="markdown-body">
-          <h3>Welcome to GitHub Pages.</h3>
+          <h3>jQuery analog clock widget plug-in.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>jqClock is a jQuery plug-in that can add one or more analog clock widgets into a page through the JavaScript. Each clock widget may show their own time.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<pre><code>jQuery('#clock').clock({
+    graduations: 12
+});
 </code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+        <h3>Demo</h3>
+        <div id="clock" style="height: 170px;"></div>
+        <h3>Options</h3>
+        <ul>
+        	<li class="m0"><span class="hl">size</span> Size of widget. It means that width and height will be {size} px. By default is 150.</li>
+        	<li class="m0"><span class="hl">graduations</span> The number of graduations on the clock face. It may be 4, 12 or 0. If 0 is given graduations will not shown. Default is 4.</li>
+        	<li class="m0"><span class="hl">date</span> JavaScript Date object. By default is current date.</li>
+        </ul>
+        <h3>Styling</h3>
+        <p class="m0">jqClock provides next CSS classes to styling the clock widget:</p>
+        <ul>
+                <li class="m0"><span class="hl">.jqc-clock-sec span</span> - for styling seconds hand of a clock</li>
+                <li class="m0"><span class="hl">.jqc-clock-min span</span> - for styling minute hand of a clock</li>
+                <li class="m0"><span class="hl">.jqc-clock-hour span</span> - for styling hour hand of a clock</li>
+                <li class="m0"><span class="hl">.jqc-drad span</span> - for styling graduations of a clock dial</li>
+        </ul>
         </article>
       </div>
     </div>
     <footer>
       <div class="owner">
-      <p><a href="https://github.com/4031651" class="avatar"><img src="https://secure.gravatar.com/avatar/07419e2832c9a9d6dd11cb72d587bfe3?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" width="48" height="48"/></a> <a href="https://github.com/4031651">4031651</a> maintains <a href="https://github.com/4031651/jqClock">jqClock</a></p>
+      <p><a href="https://github.com/4031651" class="avatar"><img alt="" src="https://secure.gravatar.com/avatar/07419e2832c9a9d6dd11cb72d587bfe3?s=48&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" width="48" height="48"/></a> <a href="https://github.com/4031651">4031651</a> maintains <a href="https://github.com/4031651/jqClock">jqClock</a></p>
       </div>
       <div class="creds">
         <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
@@ -77,9 +85,7 @@ $ git checkout gh-pages
   <div class="current-section">
     <a href="#top">Scroll to top</a>
     <a href="https://github.com/4031651/jqClock/tarball/master" class="tar">tar</a><a href="https://github.com/4031651/jqClock/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
+    <p class="name"><!-- --></p>
   </div>
-
-  
 </body>
 </html>
