@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <title>jqClock</title>
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script src="js/jqClock.js"></script>
+        <link rel="stylesheet" href="css/jqClock.css"/>
+        <style>
+#clock .jqc-clock-face {
+    background-color: #66f;
+}
+        </style>
+        <script>
+jQuery(function () {
+    jQuery('#clock').clock({
+        graduations: 12
+    });
+});
+        </script>
+    </head>
+    <body>
+        <div id="clock"></div>
+    </body>
+</html>
