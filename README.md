@@ -23,7 +23,7 @@ jqClock provides following CSS classes to style the clock widget:
 -    .jqc-drad span - for styling graduations of a clock dial
 
 ###Browsers compatibility
-The plugin is written using CSS3 transform rotate () and works in the following browsers:
+The plugin is written using CSS3 transform rotate() and works in the following browsers:
 
 -    IE 9.0 +
 -    Firefox 3.6 +
