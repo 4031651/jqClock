@@ -84,7 +84,7 @@
             function update() {
                 $sec.css(transform, 'rotate(' + (360 / 60 * date.getSeconds()) + 'deg)')
                 $min.css(transform, 'rotate(' + (360 / 60 * date.getMinutes()) + 'deg)')
-                $hour.css(transform, 'rotate(' + (360 / 12 * date.getHours()) + 'deg)')
+                $hour.css(transform, 'rotate(' + ((360 / 12 * date.getHours()) + (30 / 60 * date.getMinutes())) + 'deg)')
             }
     
             update();

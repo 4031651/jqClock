@@ -22,4 +22,4 @@ jqClock provides following CSS classes to style the clock widget:
 -    .jqc-clock-hour span - for styling hour hand of a clock
 -    .jqc-drad span - for styling graduations of a clock dial
     
-### [Demo](http://4031651.github.com/jqClock/).
+#### [Demo](http://4031651.github.com/jqClock/)
