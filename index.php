@@ -1,9 +1,17 @@
 <?php
 $dateTime = new DateTime();
-$ny     = $dateTime->setTimeZone(new DateTimeZone('America/New_York'))->format('m/d/Y H:i:s');
-$kyiv   = $dateTime->setTimeZone(new DateTimeZone('Europe/Kiev'))->format('m/d/Y H:i:s');
-$london = $dateTime->setTimeZone(new DateTimeZone('Europe/London'))->format('m/d/Y H:i:s');
-$paris  = $dateTime->setTimeZone(new DateTimeZone('Europe/Paris'))->format('m/d/Y H:i:s');
+
+$dateTime->setTimeZone(new DateTimeZone('America/New_York'));
+$ny = $dateTime->format('m/d/Y H:i:s');
+
+$dateTime->setTimeZone(new DateTimeZone('Europe/Kiev'));
+$kyiv   = $dateTime->format('m/d/Y H:i:s');
+
+$dateTime->setTimeZone(new DateTimeZone('Europe/London'));
+$london = $dateTime->format('m/d/Y H:i:s');
+
+$dateTime->setTimeZone(new DateTimeZone('Europe/Paris'));
+$paris  = $dateTime->format('m/d/Y H:i:s');
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -11,7 +19,7 @@ $paris  = $dateTime->setTimeZone(new DateTimeZone('Europe/Paris'))->format('m/d/
         <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
         <title>jqClock</title>
         <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-        <script src="js/jqClock.js"></script>
+        <script src="https://raw.github.com/4031651/jqClock/master/js/jqClock.js"></script>
         <link rel="stylesheet" href="css/jqClock.css"/>
         <style>
 ul {

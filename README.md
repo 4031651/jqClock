@@ -34,4 +34,4 @@ The plugin is written using CSS3 transform rotate() and works in the following b
 -    Opera 11.6 +
 -    Opera Mobile 11.0 +
 
-#### [Demo](http://4031651.github.com/jqClock/)
+#### [Demo1](http://4031651.github.com/jqClock/) [Demo2](http://w3maker.name/subs/jqclock/index.php)
