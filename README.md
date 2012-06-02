@@ -21,5 +21,17 @@ jqClock provides following CSS classes to style the clock widget:
 -    .jqc-clock-min span - for styling minute hand of a clock
 -    .jqc-clock-hour span - for styling hour hand of a clock
 -    .jqc-drad span - for styling graduations of a clock dial
-    
+
+###Browsers compatibility
+The plugin is written using CSS3 transform rotate () and works in the following browsers:
+
+-    IE 9.0 +
+-    Firefox 3.6 +
+-    Chrome 17.0 +
+-    Android Browser 2.1 +
+-    Safari 5.0 +
+-    iOS Safari 3.2 +
+-    Opera 11.6 +
+-    Opera Mobile 11.0 +
+
 #### [Demo](http://4031651.github.com/jqClock/)
