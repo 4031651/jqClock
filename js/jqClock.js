@@ -1,4 +1,5 @@
 (function(jQuery) {
+    //some comment
     // Code from jQuery.
     // Because jQuery.browser is deprecated now.
     function uaMatch() {
